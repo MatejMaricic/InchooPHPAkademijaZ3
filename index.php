@@ -24,6 +24,7 @@ $cols = filter_input(INPUT_POST, 'cols', FILTER_SANITIZE_NUMBER_INT);
     <div class="card">
         <div class="card-body">
             <div class="row">
+                <div> <label class="input-text">INPUT</label> <br></div>
                 <div class="col-sm">
 
                     <form action="<?= $_SERVER['PHP_SELF'] ?>" method="POST">
@@ -38,10 +39,11 @@ $cols = filter_input(INPUT_POST, 'cols', FILTER_SANITIZE_NUMBER_INT);
                         <input type="submit" class="btn btn-success" value="KREIRAJ TABLICU" class="btn btn-primary">
                     </form>
                 </div>
+                <div class="col-1"><div> <label class="output-text">OUTPUT</label> <br></div></div>
                 <div class="col-sm">
                     <?php
                     if( !$rows || !$cols) {
-                        echo "Morate upisati cijeli broj";
+                        echo "Morate upisati cijele pozitivne brojeve";
                     }
                     $numbers = ciklicnaMatrica($rows, $cols);
 

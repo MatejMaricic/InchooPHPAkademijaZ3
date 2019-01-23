@@ -38,6 +38,9 @@ body{
 .card-body{
     color: white;
     background-color: #4e555b;
+    border: 10px solid black;
+    border-top: 20px solid black;
+    border-radius: 5px;
 
 }
 
@@ -61,4 +64,20 @@ body{
     text-overflow: clip;
     background: rgba(105,109,109,1);
     text-align: center;
+}
+
+.input-text{
+    transform: rotate(-90deg);
+    padding-top: 50px;
+    color: gray;
+    font-size:18px;
+
+}
+
+.output-text{
+    transform: rotate(-90deg);
+    padding-top: 50px;
+    color: gray;
+    font-size:18px;
+
 }
