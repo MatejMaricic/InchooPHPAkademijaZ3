@@ -1,7 +1,5 @@
 <?php
 
-$row = $_POST['row']; //2
-$col= $_POST['col']; //4
 
 
 function ciklicnaMatrica($row, $col, &$array)
@@ -32,14 +30,15 @@ function ciklicnaMatrica($row, $col, &$array)
             {
                 $array[$row - 1][$i] = $pos++;
             }
-
             $row--;
         }
 
 
         if ($col_s < $col) {
             for ($i = $row - 1; $i >= $row_s; $i--)
+            {
                 $array[$i][$col_s] = $pos++;
+            }
             $col_s++;
         }
     }

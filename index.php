@@ -25,13 +25,31 @@ $row = $_POST['row'];
 $col= $_POST['col'];
 
 
-ciklicnaMatrica($row, $col,$array);
+
+
+
+ciklicnaMatrica($row, $col, $array);
+
+
+for ($i = 0; $i < $row; $i++)
+{
+    for ($j = 0; $j < $col; $j++)
+    {
+        echo($array[$i][$j]);
+    }
+
+    echo("<br />");
+}
+
 
 
 echo '<pre>';
 print_r($array);
-echo '<pre/>'
+echo '<pre/>';
+
 ?>
+
+
 
 
 
