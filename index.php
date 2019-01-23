@@ -21,10 +21,13 @@
 
 <?php
 
-$row = $_POST['row'];
-$col= $_POST['col'];
+if (is_numeric($_POST['row']) && is_numeric($_POST['col'])){
+    $row = $_POST['row'];
+    $col= $_POST['col'];
+} else{
 
-
+    echo "Unesite brojeve";
+}
 
 
 
@@ -54,21 +57,6 @@ ciklicnaMatrica($row, $col, $array);
 
 </table>
     </tbody>
-
-<?php
-
-echo '<pre>';
-print_r($array);
-echo '<pre/>';
-
-?>
-
-
-
-
-
-
-
 
 </body>
 </html>
