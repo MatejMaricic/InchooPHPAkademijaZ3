@@ -1,18 +1,22 @@
 table {
-    border: 1px solid black;
+    border: 1px solid white;
     empty-cells: show;
     border-collapse: collapse;
+
 }
 
 tr ,td {
-    width:50px;
-    height: 50px;
-    border-bottom: 1px solid black;
-    border-right: 1px solid black;
-    text-align: center;
-
-
+    min-width:35px;
+    min-height: 35px;
+    border-bottom: 1px solid white;
+    border-right: 1px solid white;
+    text-align: center
 }
+
+.space{
+    margin-top: 50px;
+}
+
 body{
 
     background:
@@ -23,6 +27,7 @@ body{
             -webkit-radial-gradient(gray 3%, transparent 8%),
             -webkit-radial-gradient(gray 3%, transparent 8%),
             rgba(0,0,0,0.7);
+
     background-position: 0 0, 80px 80px;
 
     -webkit-background-size:16px 16px;
@@ -30,22 +35,9 @@ body{
     background-size:16px 16px;
 
 }
-
-.button-css {
-    display: inline-block;
-
-    box-sizing: content-box;
-    cursor: pointer;
-    padding: 10px 20px;
-    -webkit-border-radius: 3px;
-    border: 1px solid #000000;
-    font: normal normal bold 14px/normal "Times New Roman", Times, serif;
-    color: rgba(255,255,255,0.9);
-    textrgba(255,255,255,0.9);
-    -o-text-overflow: clip;
-    text-overflow: clip;
-    background: rgba(10,175,10,0.7);
-    text-align: center;
+.card-body{
+    color: white;
+    background-color: #4e555b;
 
 }
 
