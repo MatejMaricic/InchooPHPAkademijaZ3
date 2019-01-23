@@ -1,16 +1,18 @@
 table {
-    border: 1px solid white;
+
     empty-cells: show;
-    border-collapse: collapse;
+    border-collapse: separate !important;
 
 }
 
-tr ,td {
-    min-width:35px;
-    min-height: 35px;
-    border-bottom: 1px solid white;
-    border-right: 1px solid white;
-    text-align: center
+td {
+    width:50px;
+    height: 50px;
+    border: 1px solid;
+    text-align: center;
+    border-collapse: separate;
+    border-radius: 3px;
+
 }
 
 .space{
@@ -18,7 +20,7 @@ tr ,td {
 }
 
 body{
-
+    background-color: rgb(66, 67, 68) !important;
     background:
             -moz-radial-gradient(gray 3%, transparent 8%),
             -moz-radial-gradient(gray 3%, transparent 8%),
@@ -37,11 +39,14 @@ body{
 }
 .card-body{
     color: white;
-    background-color: #4e555b;
+    background-color: rgb(66, 67, 68);
     border: 10px solid black;
     border-top: 20px solid black;
     border-radius: 5px;
 
+}
+.card{
+    background-color: black !important;
 }
 
 .input-css {
