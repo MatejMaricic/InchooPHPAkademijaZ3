@@ -31,52 +31,37 @@ $col= $_POST['col'];
 ciklicnaMatrica($row, $col, $array);
 
 
-for ($i = 0; $i < $row; $i++)
-{
-    for ($j = 0; $j < $col; $j++)
-    {
-        echo($array[$i][$j]);
-    }
+?>
+<table>
+    <tbody>
 
-    echo("<br />");
-}
+     <?php for ($i = 0; $i < $row; $i++){ ?>
+
+    <tr>
+
+     <?php for ($j = 0; $j < $col; $j++){ ?>
+
+         <td>
+         <?php   echo($array[$i][$j]);  ?>
+        </td>
+
+        <?php } ?>
+
+    </tr>
+
+   <?php } ?>
 
 
+</table>
+    </tbody>
+
+<?php
 
 echo '<pre>';
 print_r($array);
 echo '<pre/>';
 
 ?>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
