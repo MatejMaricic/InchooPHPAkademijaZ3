@@ -14,20 +14,23 @@
 
 
 <form action="<?= $_SERVER['PHP_SELF'] ?>" method="POST" >
-   Broj redaka   <input type="text" name="row"><br>
-   Broj stupaca  <input type="text" name="col"><br>
-    <input type="submit" value="Pošalji" >
+   Broj redaka <br>
+    <input class="input-css" type="text" name="rows" value="<?php echo $_POST['rows'] ?>"><br>
+   Broj stupaca <br>
+    <input class="input-css" type="text" name="cols" value="<?php echo $_POST['cols'] ?>"><br>
+    <input type="submit"  value="KREIRAJ TABLICU" class="button-css" >
 </form>
 
 <?php
 
-$rows = filter_input(INPUT_POST, 'row', FILTER_SANITIZE_NUMBER_INT);
-$cols = filter_input(INPUT_POST, 'col', FILTER_SANITIZE_NUMBER_INT);
+$rows = filter_input(INPUT_POST, 'rows', FILTER_SANITIZE_NUMBER_INT);
+$cols = filter_input(INPUT_POST, 'cols', FILTER_SANITIZE_NUMBER_INT);
 if( !$rows || !$cols) { echo "Morate upisati cijeli broj"; }
 
 
 
 $numbers = ciklicnaMatrica($rows, $cols);
+
 
 
 ?>

@@ -13,3 +13,60 @@ tr ,td {
 
 
 }
+body{
+
+    background:
+            -moz-radial-gradient(gray 3%, transparent 8%),
+            -moz-radial-gradient(gray 3%, transparent 8%),
+            rgba(0,0,0,0.7);
+    background:
+            -webkit-radial-gradient(gray 3%, transparent 8%),
+            -webkit-radial-gradient(gray 3%, transparent 8%),
+            rgba(0,0,0,0.7);
+    background-position: 0 0, 80px 80px;
+
+    -webkit-background-size:16px 16px;
+    -moz-background-size:16px 16px;
+    background-size:16px 16px;
+
+}
+
+.button-css {
+    display: inline-block;
+
+    box-sizing: content-box;
+    cursor: pointer;
+    padding: 10px 20px;
+    -webkit-border-radius: 3px;
+    border: 1px solid #000000;
+    font: normal normal bold 14px/normal "Times New Roman", Times, serif;
+    color: rgba(255,255,255,0.9);
+    textrgba(255,255,255,0.9);
+    -o-text-overflow: clip;
+    text-overflow: clip;
+    background: rgba(10,175,10,0.7);
+    text-align: center;
+
+}
+
+.input-css {
+    display: inline-block;
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    width: 70px;
+    height: 15px;
+    cursor: pointer;
+    bottom: 0;
+    margin: auto;
+    padding: 10px 20px;
+    border: 1px solid white;
+    -webkit-border-radius: 3px;
+    border-radius: 8px;
+    font: normal normal bold 16px/normal "Times New Roman", Times, serif;
+    color: rgba(255,255,255,0.9);
+    -o-text-overflow: clip;
+    text-overflow: clip;
+    background: rgba(105,109,109,1);
+    text-align: center;
+}
