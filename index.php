@@ -54,9 +54,9 @@ ciklicnaMatrica($row, $col, $array);
 
    <?php } ?>
 
-
-</table>
     </tbody>
+</table>
+
 
 </body>
 </html>
