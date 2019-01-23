@@ -21,31 +21,27 @@
 
 <?php
 
-if (is_numeric($_POST['row']) && is_numeric($_POST['col'])){
-    $row = $_POST['row'];
-    $col= $_POST['col'];
-} else{
-
-    echo "Unesite brojeve";
-}
+$rows = filter_input(INPUT_POST, 'row', FILTER_SANITIZE_NUMBER_INT);
+$cols = filter_input(INPUT_POST, 'col', FILTER_SANITIZE_NUMBER_INT);
+if( !$rows || !$cols) { echo "Morate upisati cijeli broj"; }
 
 
 
-ciklicnaMatrica($row, $col, $array);
+$numbers = ciklicnaMatrica($rows, $cols);
 
 
 ?>
 <table>
     <tbody>
 
-     <?php for ($i = 0; $i < $row; $i++){ ?>
+     <?php for ($i = 0; $i < $rows; $i++){ ?>
 
     <tr>
 
-     <?php for ($j = 0; $j < $col; $j++){ ?>
+     <?php for ($j = 0; $j < $cols; $j++){ ?>
 
          <td>
-         <?php   echo($array[$i][$j]);  ?>
+         <?php   echo($numbers[$i][$j]);  ?>
         </td>
 
         <?php } ?>
