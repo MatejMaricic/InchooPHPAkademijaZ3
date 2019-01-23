@@ -21,6 +21,17 @@ $cols = filter_input(INPUT_POST, 'cols', FILTER_SANITIZE_NUMBER_INT);
     <a class="navbar-brand" href="#">PHP Akademija - Zadatak 3</a>
 </nav>
 <div class="container space">
+    <div class="col-3">
+    <label><h4>CIKLIČKA TABLICA</h4></label>
+        <text class="tekst">Korisnik unosi 2 polja: broj <b>redova</b> i broj <b>stupaca</b>, ispod postoji gumb <b>"KREIRAJ TABLICU"</b>. Nakon submita pored navedene forme prikazuje
+            se tablica zatraženih dimenzija gdje su polja popunjena brojevima.Brojevi su popunjeni sljedećom logikom:
+            <br>
+            - BROJ 1 SE NALAZI U GORNJEM LIJEVOM KUTU
+            <br>
+            - POLJA TABLICE SE POPUNJAVAJU SPIRALNO CIKLIČKI U KRUG U SMJERU KAZALJKE NA SATU
+        </text>
+
+    </div>
     <div class="card">
         <div class="card-body">
             <div class="row">
@@ -57,7 +68,7 @@ $cols = filter_input(INPUT_POST, 'cols', FILTER_SANITIZE_NUMBER_INT);
 
                                 <?php for ($j = 0; $j < $cols; $j++){ ?>
 
-                                    <td>
+                                    <td >
                                         <?php   echo($numbers[$i][$j]);  ?>
                                     </td>
 

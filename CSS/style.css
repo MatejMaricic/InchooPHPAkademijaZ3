@@ -2,6 +2,7 @@ table {
 
     empty-cells: show;
     border-collapse: separate !important;
+    border-spacing: 1px ;
 
 }
 
@@ -10,9 +11,13 @@ td {
     height: 50px;
     border: 1px solid;
     text-align: center;
-    border-collapse: separate;
     border-radius: 3px;
 
+
+}
+tr:first-child td:first-child{
+
+    background-color:gray ;
 }
 
 .space{
@@ -44,9 +49,11 @@ body{
     border-top: 20px solid black;
     border-radius: 5px;
 
+
 }
 .card{
     background-color: black !important;
+
 }
 
 .input-css {
@@ -85,4 +92,20 @@ body{
     color: gray;
     font-size:18px;
 
+}
+
+
+
+.col-3{
+    float: left;
+    color: white;
+}
+.container{
+    margin-top: 50px !important;
+    margin-left: 10px !important;
+
+}
+.tekst{
+
+    font-size: 12px;
 }
