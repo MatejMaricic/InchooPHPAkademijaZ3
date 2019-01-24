@@ -8,7 +8,7 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="CSS/style.css">
-    <link rel="stylesheet" href="CSS/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="CSS/bootstrap.min.css">
     <title>Zadaca 3</title>
 </head>
 <body>
@@ -23,13 +23,13 @@ $cols = filter_input(INPUT_POST, 'cols', FILTER_SANITIZE_NUMBER_INT);
 <div class="container space">
     <div class="col-3">
     <label><h4>CIKLIČKA TABLICA</h4></label>
-        <text class="tekst">Korisnik unosi 2 polja: broj <b>redova</b> i broj <b>stupaca</b>, ispod postoji gumb <b>"KREIRAJ TABLICU"</b>. Nakon submita pored navedene forme prikazuje
+        <span class="tekst">Korisnik unosi 2 polja: broj <b>redova</b> i broj <b>stupaca</b>, ispod postoji gumb <b>"KREIRAJ TABLICU"</b>. Nakon submita pored navedene forme prikazuje
             se tablica zatraženih dimenzija gdje su polja popunjena brojevima.Brojevi su popunjeni sljedećom logikom:
             <br>
             - BROJ 1 SE NALAZI U GORNJEM LIJEVOM KUTU
             <br>
             - POLJA TABLICE SE POPUNJAVAJU SPIRALNO CIKLIČKI U KRUG U SMJERU KAZALJKE NA SATU
-        </text>
+        </span>
 
     </div>
     <div class="card">
@@ -50,7 +50,7 @@ $cols = filter_input(INPUT_POST, 'cols', FILTER_SANITIZE_NUMBER_INT);
                         <input type="submit" class="btn btn-success" value="KREIRAJ TABLICU" class="btn btn-primary">
                     </form>
                 </div>
-                <div class="col-1"><div> <label class="output-text">OUTPUT</label> <br></div></div>
+                <div> <label class="output-text">OUTPUT</label> <br></div>
                 <div class="col-sm">
                     <?php
                     if( !$rows || !$cols) {
