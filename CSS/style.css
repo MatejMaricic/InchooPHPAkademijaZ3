@@ -111,21 +111,23 @@ body{
 }
 
 td.right::after {
-    content: '--';
+    content: '---';
     color: green;
     display: inline-block;
-    margin-left: 11px;
+    margin-left: 12px;
     position: absolute;
     font-weight: bolder;
+    letter-spacing: -1px;
 }
 
 td.left::after {
-    content: '--';
+    content: '---';
     color: green;
     display: inline-block;
     position: absolute;
     font-weight: bolder;
-    margin-left: -35px;
+    margin-left: -38px;
+    letter-spacing: -1px;
 }
 
 td.top::after {
