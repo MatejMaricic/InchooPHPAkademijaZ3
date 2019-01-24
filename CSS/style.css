@@ -109,3 +109,39 @@ body{
 
     font-size: 12px;
 }
+
+td.right::after {
+    content: '--';
+    color: green;
+    display: inline-block;
+    margin-left: 11px;
+    position: absolute;
+    font-weight: bolder;
+}
+
+td.left::after {
+    content: '--';
+    color: green;
+    display: inline-block;
+    position: absolute;
+    font-weight: bolder;
+    margin-left: -35px;
+}
+
+td.top::after {
+    content: '| ';
+    position: absolute;
+    font-weight: bolder;
+    color: green;
+    margin-left: -11px;
+    margin-top: -25px;
+}
+
+td.bottom::after {
+    content: '| ';
+    position: absolute;
+    font-weight: bolder;
+    color: green;
+    margin-left: -11px;
+    margin-top: 25px;
+}

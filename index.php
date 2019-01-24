@@ -56,7 +56,9 @@ $cols = filter_input(INPUT_POST, 'cols', FILTER_SANITIZE_NUMBER_INT);
                     if( !$rows || !$cols) {
                         echo "Morate upisati cijele pozitivne brojeve";
                     }
-                    $numbers = ciklicnaMatrica($rows, $cols);
+
+                    $data = ciklicnaMatrica($rows, $cols);
+                    $lastpos = $rows*$cols;
 
                     ?>
                     <table>
@@ -68,8 +70,10 @@ $cols = filter_input(INPUT_POST, 'cols', FILTER_SANITIZE_NUMBER_INT);
 
                                 <?php for ($j = 0; $j < $cols; $j++){ ?>
 
-                                    <td >
-                                        <?php   echo($numbers[$i][$j]);  ?>
+                                    <td class="<?php if ($lastpos == $data['numbers'][$i][$j])
+                                    { echo ""; }else
+                                        { echo $data['class'][$i][$j];} ?> " >
+                                        <?php   echo($data['numbers'][$i][$j]);  ?>
                                     </td>
 
                                 <?php } ?>
